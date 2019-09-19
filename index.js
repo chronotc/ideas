@@ -20,8 +20,19 @@ const attack2 = makeAttack({
 // no makes
 const { attack: attack3 } = require('./attack');
 
+// inline
+const { attack: attack4 } = require('./all-attacks');
+
+// class
+const { Ninja } = require('./Ninja');
+
 attack({ weapon: 'knife' });
 
 attack2({ weapon: 'bow' });
 
 attack3({ weapon: 'sword' });
+
+attack4({ weapon: 'axe', name: 'Bob' });
+
+const ninja = new Ninja({ name: 'Bob' });
+ninja.attack({ weapon: 'stone' });
