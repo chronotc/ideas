@@ -20,8 +20,11 @@ const attack2 = makeAttack({
 // no makes
 const { attack: attack3 } = require('./attack');
 
-// inline
+// in function
 const { attack: attack4 } = require('./all-attacks');
+
+// inline
+const { attack: attack5 } = require('./inline-attacks');
 
 // class
 const { Ninja } = require('./Ninja');
@@ -32,7 +35,9 @@ attack2({ weapon: 'bow' });
 
 attack3({ weapon: 'sword' });
 
-attack4({ weapon: 'axe', name: 'Bob' });
+attack4({ weapon: 'axe' });
+
+attack5({ weapon: 'spear' });
 
 const ninja = new Ninja({ name: 'Bob' });
 ninja.attack({ weapon: 'stone' });

@@ -1,4 +1,7 @@
-class Attacker {
+const { colors } = require('colors');
+const emoji = require('node-emoji')
+
+class Ninja {
   constructor({ name }) {
     this.name = name;
   }
@@ -10,14 +13,14 @@ class Attacker {
   }
 
   throwWeapon({ weapon }) {
-    console.log(`Preparing weapon: ${weapon}`);
+    console.log(`Throwing weapon: ${weapon} ${emoji.get('knife')}`);
   }
 
   prepareWeapon({ weapon }) {
-    console.log(`Throwing weapon: ${weapon}`);
+    console.log(`Preparing weapon: ${weapon}`.magenta);
   }
 }
 
 module.exports = {
-  Attacker
+  Ninja
 };

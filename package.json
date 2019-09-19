@@ -1,0 +1,12 @@
+{
+  "name": "ideas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chronotc/ideas.git",
+  "author": "chronotc <7519144+chronotc@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "node-emoji": "^1.10.0"
+  }
+}
